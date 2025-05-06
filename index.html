@@ -4,39 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACM Calculator Demo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to ACM Calculator Demo</h1>
-    <p>Click the buttons below to perform calculations.</p>
-    <div>
-        <label for="display">Display:</label>
-        <input type="text" id="display" readonly>
-    </div>
+    <div class="Calculator">
+        <h1>ACM Calculator</h1>
+        <p>Click the buttons below to perform calculations.</p>
+        <div>
+            <label for="display">Display:</label>
+            <input type="text" id="display" readonly>
+        </div>
 
-    <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>0</button>
-        <button>+</button>
-        <button>-</button>
-        <button>*</button>
-        <button>/</button>
-        <button>=</button>
-        <button>AC</button>
-        <button><-</button>
-    </div>
+        <div class="buttons">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">0</button>
+            <button class="button">+</button>
+            <button class="button">-</button>
+            <button class="button">*</button>
+            <button class="button">/</button>
+            <button class="button">=</button>
+            <button class="button">AC</button>
+            <button class="button"><-</button>
+        </div>
 
-    <div>
-        <label for="answer">Output:</label>
-        <p id="answer">answer here</p>
+        <div>
+            <label for="answer">Output:</label>
+            <p id="answer">answer here</p>
+        </div>
     </div>
-    
 </body>
 </html>

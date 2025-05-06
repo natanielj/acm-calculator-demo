@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  overflow: hidden;
+}
+
+.display {
+  background-color: #222;
+  color: #fff;
+  font-size: 2rem;
+  text-align: right;
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.button {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: filter 0.1s ease-in-out;
+}
+
+.button:hover {
+  filter: brightness(0.95);
+}
+
+/* Operator buttons (+, -, ×, ÷) */
+.button.operator {
+  background-color: #f5923e;
+  color: #fff;
+}
+
+/* Equal button spanning two columns */
+.button.equal {
+  background-color: #4caf50;
+  color: #fff;
+  grid-column: span 2;
+}
+
+/* Zero button spanning two columns */
+.button.zero {
+  grid-column: span 2;
+}
+
+/* Optional: style for clear */
+.button.clear {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+.button.clear:hover {
+  filter: brightness(0.9);
+}
